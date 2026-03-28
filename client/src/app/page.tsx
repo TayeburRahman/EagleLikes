@@ -92,7 +92,7 @@ const ServiceCard = ({
       </div>
 
       {/* Feature List */}
-      <div className="px-3 py-3 pr-5 flex-1 flex flex-col bg-[#161B3D]/50 backdrop-blur-sm">
+      <div className="px-3 py-3 pr-6 flex-1 flex flex-col bg-[#161B3D]/50 backdrop-blur-sm">
         <ul className="space-y-[5px] md:space-y-[7px] mb-4">
           {features.map((feature, idx) => (
             <li key={idx} className="flex items-start gap-2 md:gap-2.5">
