@@ -174,16 +174,16 @@ export default function EagleLikesPage() {
       {/* Dynamic Background Glows (Exact Per Reference) */}
 
       {/* 1. Top Central Glow (Hero Depth) */}
-      <div className="fixed top-[-100px] left-1/2 translate-x-[-50%] w-[800px] h-[400px] bg-[#0663CDA6] blur-[120px] rounded-[100%] pointer-events-none" />
+      <div className="absolute top-[-100px] left-1/2 translate-x-[-50%] w-[800px] h-[400px] bg-[#0663CDA6] blur-[120px] rounded-[100%] pointer-events-none" />
 
       {/* 2. Left Middle Glow (Electric Blue Accent) */}
-      <div className="hidden lg:block fixed top-[25%] left-[-150px] w-[500px] h-[500px] bg-[#0663CDA6] blur-[100px] rounded-full pointer-events-none " />
+      <div className="hidden lg:block absolute top-[25%] left-[-150px] w-[500px] h-[500px] bg-[#0663CDA6] blur-[100px] rounded-full pointer-events-none " />
 
       {/* 3. Right Middle Glow (Royal Blue Accent) */}
-      <div className="hidden lg:block fixed top-[40%] right-[-150px] w-[600px] h-[600px] bg-[#0663CDA6] blur-[120px] rounded-full pointer-events-none " />
+      <div className="hidden lg:block absolute top-[40%] right-[-150px] w-[600px] h-[600px] bg-[#0663CDA6] blur-[120px] rounded-full pointer-events-none " />
 
       {/* 4. Global Subtle Depth */}
-      <div className="hidden lg:block fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[1000px] h-[600px] bg-blue-500/5 blur-[180px] rounded-full pointer-events-none" />
+      <div className="hidden lg:block absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[1000px] h-[600px] bg-blue-500/5 blur-[180px] rounded-full pointer-events-none" />
 
 
 
