@@ -41,7 +41,7 @@ const ServiceCard = ({
   return (
     <div
       onClick={onSelect}
-      className={`relative flex flex-col rounded-[24px] md:rounded-[32px] overflow-hidden transition-all duration-500 w-[158.89px] md:w-[210px] h-[320px] md:h-[377px] cursor-pointer group shrink-0 ${isSelected ? "translate-y-[-8px]" : "hover:translate-y-[-4px]"
+      className={`relative flex flex-col rounded-[24px] md:rounded-[32px] overflow-hidden transition-all duration-500 w-[158.89px] md:w-[220px] h-[320px] md:h-[377px] cursor-pointer group shrink-0 ${isSelected ? "translate-y-[-8px]" : "hover:translate-y-[-4px]"
         }`}
       style={{
         backgroundColor: "rgba(15, 23, 42, 0.9)",
@@ -92,7 +92,7 @@ const ServiceCard = ({
       </div>
 
       {/* Feature List */}
-      <div className="px-3 md:px-3 py-3 flex-1 flex flex-col bg-[#161B3D]/50 backdrop-blur-sm">
+      <div className="px-3 py-3 pr-5 flex-1 flex flex-col bg-[#161B3D]/50 backdrop-blur-sm">
         <ul className="space-y-[5px] md:space-y-[7px] mb-4">
           {features.map((feature, idx) => (
             <li key={idx} className="flex items-start gap-2 md:gap-2.5">
@@ -117,7 +117,7 @@ const ServiceCard = ({
 
       {/* Selection Circle at Bottom Right (Pinned) */}
       <div
-        className={`absolute bottom-5 right-6 w-7 h-7 rounded-full border-[2.5px] flex items-center justify-center transition-all duration-300 ${isSelected ? "shadow-inner scale-110" : "border-white/10 scale-100"
+        className={`absolute bottom-4 right-3 md:bottom-5 md:right-6 w-5 h-5 md:w-7 md:h-7 rounded-full border-[1.5px] md:border-[2.5px] flex items-center justify-center transition-all duration-300 ${isSelected ? "shadow-inner scale-110" : "border-white/10 scale-100"
           }`}
         style={{
           background: isSelected ? (selectionGradient || color) : 'transparent',
@@ -125,7 +125,7 @@ const ServiceCard = ({
           border: isSelected && selectionGradient ? 'none' : undefined
         }}
       >
-        {isSelected && <Check className="h-5 w-5 text-white stroke-[3]" />}
+        {isSelected && <Check className="h-3 w-3 md:h-5 md:w-5 text-white stroke-[4] md:stroke-[3]" />}
       </div>
     </div>
   );
@@ -289,8 +289,8 @@ export default function EagleLikesPage() {
         </div>
 
         {/* ─── Service Grid (Carousel on Mobile) ─── */}
-        <div className="relative w-full max-w-full md:max-w-[678px] mx-auto mb-20 animate-fade-in-up font-sans pt-1" style={{ animationDelay: '0.3s' }}>
-          <div className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-2 pb-8 pl-4 no-scrollbar md:grid md:grid-cols-3 md:gap-6 md:px-0 md:justify-center h-full pt-5">
+        <div className="relative w-full max-w-full md:max-w-[688px] mx-auto mb-20 animate-fade-in-up font-sans pt-1" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-2 pb-8 pl-4 no-scrollbar md:grid md:grid-cols-3 md:px-0 md:justify-center h-full pt-5">
             <ServiceCard
               id="premium"
               title="Premium Followers"
