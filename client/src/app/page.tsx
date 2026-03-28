@@ -273,7 +273,7 @@ export default function EagleLikesPage() {
 
           <div
             onClick={handleToggleVip}
-            className="relative flex items-center gap-3 md:gap-5 bg-[#161B3D]/90 p-2 px-5 md:px-6 rounded-full border border-pink-500/30 shadow-[0_0_40px_rgba(233,30,99,0.1)] group transition-all hover:border-pink-500/50 animate-fade-in-up cursor-pointer w-full max-w-[343px] sm:w-auto sm:max-w-none sm:inline-flex"
+            className="relative flex items-center gap-3 md:gap-5 bg-[#161B3D]/90 p-2 px-5 md:px-6 rounded-full border border-pink-500/30 shadow-[0_0_40px_rgba(233,30,99,0.1)] group transition-all hover:border-pink-500/50 animate-fade-in-up cursor-pointer w-full max-w-[343px] md:w-[367px] md:h-[48px] md:inline-flex"
             style={{ animationDelay: '0.2s' }}
           >
             <div
